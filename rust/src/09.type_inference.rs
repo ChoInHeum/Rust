@@ -45,5 +45,23 @@ fn type_inference() {
     let my_other_float: f32 = 8.5;
 
     let third_float = my_float + my_other_float; // Error
+    
+    // 해결 방법(1) - Casting(as)
+    let my_float: f64 = 5.0;
+    let my_other_float: f32 = 8.5;
 
+    let third_float = my_float + my_other_float as f64;
+    // my_other_float를 f64로 casting해서 사용
+
+    // 해결 방법(2) - compiler에게 지정하도록 함
+    let my_float = 5.0;
+    let my_other_float = 8.5;
+
+    let third_float = my_float + my_other_float;
+
+    // 해결 방법(3) - compiler의 추론 유도 (한 쪽만 type을 명시)
+    let my_float: f32 = 5.0;
+    let my_other_float = 8.5;
+
+    let third_float = my_float + my_other_float;
 }
