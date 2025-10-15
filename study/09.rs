@@ -1,3 +1,4 @@
+/// 09. Type inference
 fn type_inference() {
     /// Type inference 란?
     /// - compiler가 type을 스스로 판단하게 하는 것
