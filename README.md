@@ -1,3 +1,4 @@
 # Rust
-### Programming Language Rust Study
-![Rust Logo](https://i.namu.wiki/i/KZSAPX5Ed0KBX-JXVw3Ski7RdJVdd2sVpOEuSiDXNYQK6nX8uN5KnyG-3Ou5YaFTiY8nLRL0-VE5kkR7zmGr4g.svg)
+## Programming Language Rust Study
+### Textbook
+- **<a href="https://dhghomon.github.io/easy_rust/" target="_blank">Easy Rust</a>**
