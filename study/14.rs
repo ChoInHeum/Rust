@@ -1,5 +1,5 @@
 /// 14. More about printing
-/// \n => 줄바꿈 \t => 탭
+/// "" 안에서 \n => 줄바꿈 \t => 탭
 fn main() {
     print!("\t Start with a tab\nand move to new line");
 }
@@ -47,4 +47,34 @@ fn main() {
 fn main() {
     let my_string = "'Ice to see you,' he said.";
     let quote_string = r#""Ice to see you," he said."#;
+    let hashtag_string = r##"The hsahtag #IceToSeeYou had become ver popular."##;
+    let many_hashtags = r####"You don't have to type ### to use a hastag. you can just use #."####;
+
+    println!("{}\n{}\n{}\n{}\n", my_string, quote_string, hashtag_string, many_hashtags);
 }
+/// <출력>
+// 'Ice to see you,' he said.
+// "Ice to see you," he said.
+// The hsahtag #IceToSeeYou had become ver popular.
+// You don't have to type ### to use a hastag. you can just use #.
+
+/// r#은 let과 같은 rust에서 지정된 키워드를 변수 이름으로 지정할 수 있게 해준다.
+fn main() {
+    let r#let = 6;
+    let mut r#mut = 10;
+}
+// <ex>
+fn r#return() -> u8 {
+    println!("Here si your number");
+    8
+}
+
+fn main() {
+    let my_number = r#return();
+    println!("{}", my_number);
+}
+// <출력>
+// Here is your number
+// 8
+
+// 뒤 내용은 생략함

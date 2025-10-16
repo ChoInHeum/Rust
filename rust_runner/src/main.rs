@@ -1,9 +1,10 @@
-fn r#return() -> u8 {
-    println!("Here si your number");
-    8
-}
-
 fn main() {
-    let my_number = r#return();
-    println!("{}", my_number);
+    let my_name = "Billybrobby";
+    let my_country = "USA";
+    let my_home = "Korea";
+    let together = format!(
+        "I am {} and I come from {} but I live in {}.",
+        my_name, my_country, my_home
+    );
+    println!("{}", together);
 }
